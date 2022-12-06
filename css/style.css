@@ -23,7 +23,15 @@ ul {
     margin: 0;
 }
 
+:root {
+    --color-black: #040404;
+    --color-dark-grey: #363636;
+    --color-gold: #9f6b08;
+    --color-light-gold: #f9ce5c;
+    --color-white: #fff;
 
+    --color-gradient: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
+}
 
 
 
