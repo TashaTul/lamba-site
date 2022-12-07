@@ -1,5 +1,20 @@
+@font-face {
+    font-family: "Impact", sans-serif;
+    src: url(../fonts/impact.woff2);
+}
+
 html {
     box-sizing: border-box;
+}
+
+:root {
+    --color-black: #040404;
+    --color-dark-grey: #363636;
+    --color-gold: #9f6b08;
+    --color-light-gold: #f9ce5c;
+    --color-white: #fff;
+
+    --color-gradient: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 *,
@@ -10,6 +25,12 @@ html {
 
 body {
     margin: 0;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--color-black); 
 }
 
 a {
@@ -23,23 +44,16 @@ ul {
     margin: 0;
 }
 
-:root {
-    --color-black: #040404;
-    --color-dark-grey: #363636;
-    --color-gold: #9f6b08;
-    --color-light-gold: #f9ce5c;
-    --color-white: #fff;
-
-    --color-gradient: linear-gradient(180deg, #D8D4CA 0%, rgba(217, 217, 217, 0) 100%);
-}
-
-
-
 .header {
     padding-top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    background: var(--color-gradient);
 }
 
-.header-nav-wrapper {
+.wrapper {
     max-width: 1220px; /*Автор видео задал ширину контейнера больше чем заданная ширина сетки. Почему? */
 
     padding: 0 10px;
@@ -62,11 +76,75 @@ ul {
 }
 
 .header-nav__menu-link {
-
+    color: var(--color-dark-grey);
+    font-size: 16px;
 }
 
 .header-nav__link-logo {
 }
 
 .header-nav__logo {
+}
+
+.main {
+}
+
+.section-promo {
+    background-image: url(../images/promo-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-promo__wrapper {
+}
+
+.section-promo__wrapper__text {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.section-promo__title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 76px;
+    letter-spacing: 0.02em;
+    margin: 0 -65px 10px 0;
+}
+
+.section-promo__subtitle {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+
+    margin: 0 0 10px;
+}
+
+.section-promo__date {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--color-gold);
+
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 110px;
+    padding-right: 110px;
+    
+    border-bottom: 1px solid var(--color-black);
+}
+
+.section-promo__location {
+    font-size: 16px;
+    color: var(--color-black);
+    margin-top: 10px;
+}
+
+.section-promo__arrow {
+    margin-top: auto;
+    margin-bottom: 30px;
 }
