@@ -1,6 +1,10 @@
 @font-face {
     font-family: "Impact", sans-serif;
-    src: url(../fonts/impact.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local("Impact"), url(../fonts/impact.woff) format("woff"),
+        url(../fonts/impact.woff2) format("woff2");
 }
 
 html {
@@ -134,7 +138,7 @@ ul {
     padding-bottom: 10px;
     padding-left: 110px;
     padding-right: 110px;
-    
+
     border-bottom: 1px solid var(--color-black);
 }
 
